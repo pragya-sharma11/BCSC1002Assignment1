@@ -48,4 +48,17 @@ public class Book {
     public String getIsbnNumberOfBook() {
         return isbnNumberOfBook;
     }
+
+    //setter methods
+    public void setNameOfTheBook(String nameOfTheBook) {
+        this.nameOfTheBook = nameOfTheBook;
+    }
+
+    public void setNameOfTheAuthor(String nameOfTheAuthor) {
+        this.nameOfTheAuthor = nameOfTheAuthor;
+    }
+
+    public void setIsbnNumberOfBook(String isbnNumberOfBook) {
+        this.isbnNumberOfBook = isbnNumberOfBook;
+    }
 }
