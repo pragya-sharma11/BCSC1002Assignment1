@@ -61,4 +61,9 @@ public class Book {
     public void setIsbnNumberOfBook(String isbnNumberOfBook) {
         this.isbnNumberOfBook = isbnNumberOfBook;
     }
+
+    @Override
+    public String toString() {
+        return ("Name of the book is \"" + getNameOfTheBook() + "\". Its is written by \"" + getNameOfTheAuthor() + "\".Its ISBN number is \"" + getIsbnNumberOfBook() + "\".");
+    }
 }
