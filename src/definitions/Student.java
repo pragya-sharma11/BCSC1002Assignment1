@@ -82,4 +82,16 @@ public class Student {
     public int hashcode() {
         return Objects.hash(getNameOfStudent(), getUniversityRollNumber(), getNumberOfBooksIssued());
     }
+
+    /**
+     * this method is used to display all issued books.
+     */
+    public void showAllIssuesBooks() {
+        System.out.println("List of issued books:--");
+        for (Book books : this.issuedBooks) {
+            if (((books.getNameOfTheBook()).equalsIgnoreCase(returnedBook)) == false) {
+                System.out.println(books);
+            }
+        }
+    }
 }
