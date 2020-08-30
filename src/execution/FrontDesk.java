@@ -55,6 +55,6 @@ public class FrontDesk {
                     break;
             }
         } while (choiceNumber != EXIT);
-
+        scanner.close();
     }
 }
