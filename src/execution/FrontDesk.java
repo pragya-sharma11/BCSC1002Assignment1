@@ -48,6 +48,8 @@ public class FrontDesk {
                 case ALL_BOOKS_LIST:
                     student.showAllIssuesBooks();
                     break;
+                case EXIT:
+                    System.out.println("Thanks for visiting Library!!!");
             }
         } while (choiceNumber != EXIT);
 
