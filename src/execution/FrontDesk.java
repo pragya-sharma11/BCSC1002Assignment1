@@ -6,10 +6,12 @@
  * */
 package execution;
 
+import definitions.Library;
 import definitions.Student;
 
 public class FrontDesk {
     public static void main(String[] args) {
         Student student = new Student();
+        Library library =new Library();
     }
 }
