@@ -6,6 +6,8 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+
 public class Library {
     private Book[] availableBooks;
     private int numberOfAvailableBooks;
@@ -30,5 +32,10 @@ public class Library {
     //setter
     public void setAvailableBooks(Book[] availableBooks) {
         this.availableBooks = availableBooks;
+    }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(availableBooks);
     }
 }
