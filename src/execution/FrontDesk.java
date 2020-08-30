@@ -45,6 +45,9 @@ public class FrontDesk {
                     String returnedBook = scanner.nextLine();
                     student.doReturnIssuedBook(returnedBook);
                     break;
+                case ALL_BOOKS_LIST:
+                    student.showAllIssuesBooks();
+                    break;
             }
         } while (choiceNumber != EXIT);
 
