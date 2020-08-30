@@ -98,9 +98,19 @@ public class Student {
     /**
      * this method is used to issue a book.
      *
-     * @param issueBook
+     * @param issueBook hold the issued book.
      */
     public void doIssueABook(String issueBook) {
         System.out.println("Thanks for issuing \"" + issueBook + "\" book!!");
+    }
+
+    /**
+     * this method is used to return a book.
+     *
+     * @param returnedBook hold the returned book.
+     */
+    public void doReturnIssuedBook(String returnedBook) {
+        this.returnedBook = returnedBook;
+        System.out.println("Thanks for returning \"" + returnedBook + "\" book");
     }
 }
