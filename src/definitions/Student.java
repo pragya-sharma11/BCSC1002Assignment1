@@ -13,4 +13,15 @@ public class Student {
     private Book[] issuedBooks;
     private String returnedBook;
 
+    //constructor
+    public Student() {
+        nameOfStudent = "Neeraj Kumar Verma";
+        universityRollNumber = 191600489L;
+        numberOfBooksIssued = 4;
+        this.issuedBooks = new Book[numberOfBooksIssued];
+        issuedBooks[0] = new Book();
+        issuedBooks[1] = new Book("9897569453201");
+        issuedBooks[2] = new Book("Software Engineering", "K.K.Agarwal");
+        issuedBooks[3] = new Book("Computer Science with Java", "Sumita Arora", "9695949392996");
+    }
 }
