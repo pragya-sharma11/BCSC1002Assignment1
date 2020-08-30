@@ -23,5 +23,14 @@ public class FrontDesk {
         Scanner scanner = new Scanner(System.in);
         int choiceNumber;
         System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
+        do {
+            System.out.println("1.Issue a new book for me.");
+            System.out.println("2.Return a previously issues book for me.");
+            System.out.println("3.Show me all my issues books.");
+            System.out.println("4.Exit");
+            System.out.println("Enter your choice 1..4");
+            choiceNumber = scanner.nextInt();
+
+        } while (choiceNumber != 4);
     }
 }
