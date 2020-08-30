@@ -94,4 +94,13 @@ public class Student {
             }
         }
     }
+
+    /**
+     * this method is used to issue a book.
+     *
+     * @param issueBook
+     */
+    public void doIssueABook(String issueBook) {
+        System.out.println("Thanks for issuing \"" + issueBook + "\" book!!");
+    }
 }
