@@ -50,6 +50,9 @@ public class FrontDesk {
                     break;
                 case EXIT:
                     System.out.println("Thanks for visiting Library!!!");
+                default:
+                    System.out.println("You have entered wrong choice.Please try again!!!");
+                    break;
             }
         } while (choiceNumber != EXIT);
 
