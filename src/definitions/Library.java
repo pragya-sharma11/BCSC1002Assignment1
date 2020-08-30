@@ -21,4 +21,9 @@ public class Library {
             availableBooks[index] = new Book(availableBooksList[index], authorsCorrespondingToAvailableBooks[index], isbnNumberCorrespondingToAvailableBooks[index]);
         }
     }
+
+    //getter
+    public Book[] getAvailableBooks() {
+        return availableBooks.clone();
+    }
 }
