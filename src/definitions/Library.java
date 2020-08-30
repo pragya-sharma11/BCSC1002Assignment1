@@ -26,4 +26,9 @@ public class Library {
     public Book[] getAvailableBooks() {
         return availableBooks.clone();
     }
+
+    //setter
+    public void setAvailableBooks(Book[] availableBooks) {
+        this.availableBooks = availableBooks;
+    }
 }
