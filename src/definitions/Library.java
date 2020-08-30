@@ -56,4 +56,13 @@ public class Library {
     public int hashcode() {
         return Objects.hash(getAvailableBooks());
     }
+
+    /**
+     * this method is used to show all avilable books in library.
+     */
+    public void displayListOfAvailableBooks() {
+        for (Book availableBook : availableBooks) {
+            System.out.println(availableBook);
+        }
+    }
 }
