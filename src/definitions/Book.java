@@ -80,4 +80,9 @@ public class Book {
         Book book = (Book) o;
         return Objects.equals(getIsbnNumberOfBook(), book.getIsbnNumberOfBook()) && Objects.equals(getNameOfTheAuthor(), book.getNameOfTheAuthor()) && Objects.equals(getIsbnNumberOfBook(), book.getIsbnNumberOfBook());
     }
+
+    //@Override
+    public int hashcode() {
+        return Objects.hash(getIsbnNumberOfBook(), getNameOfTheAuthor(), getIsbnNumberOfBook());
+    }
 }
