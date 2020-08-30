@@ -24,4 +24,21 @@ public class Student {
         issuedBooks[2] = new Book("Software Engineering", "K.K.Agarwal");
         issuedBooks[3] = new Book("Computer Science with Java", "Sumita Arora", "9695949392996");
     }
+
+    //getter methods
+    public String getNameOfStudent() {
+        return nameOfStudent;
+    }
+
+    public long getUniversityRollNumber() {
+        return universityRollNumber;
+    }
+
+    public int getNumberOfBooksIssued() {
+        return numberOfBooksIssued;
+    }
+
+    public Book[] getIssuedBooks() {
+        return issuedBooks.clone();
+    }
 }
