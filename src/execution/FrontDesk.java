@@ -30,7 +30,17 @@ public class FrontDesk {
             System.out.println("4.Exit");
             System.out.println("Enter your choice 1..4");
             choiceNumber = scanner.nextInt();
+            switch (choiceNumber) {
+                case NEW_BOOK:
+                    System.out.println("List Of available Books:-");
+                    library.displayListOfAvailableBooks();
+                    System.out.println("Enter book name you want to issue.");
+                    scanner.nextLine();
+                    String book = scanner.nextLine();
+                    student.doIssueABook(book);
+                    break;
+            }
+        } while (choiceNumber != EXIT);
 
-        } while (choiceNumber != 4);
     }
 }
